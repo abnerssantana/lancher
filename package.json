@@ -1,0 +1,25 @@
+{
+  "name": "lancher",
+  "version": "1.0.0",
+  "description": "Cantina Digital para Escolas - Lancher",
+  "scripts": {
+    "prebuild": "mkdir -p public/vendor/bootstrap/css public/vendor/bootstrap/js public/vendor/fontawesome/css public/vendor/fontawesome/webfonts",
+    "build:bootstrap-css": "cp node_modules/bootstrap/dist/css/bootstrap.min.css public/vendor/bootstrap/css/",
+    "build:bootstrap-js": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js public/vendor/bootstrap/js/",
+    "build:fontawesome-css": "cp node_modules/@fortawesome/fontawesome-free/css/all.min.css public/vendor/fontawesome/css/",
+    "build:fontawesome-fonts": "cp -r node_modules/@fortawesome/fontawesome-free/webfonts/* public/vendor/fontawesome/webfonts/",
+    "build": "npm run build:bootstrap-css && npm run build:bootstrap-js && npm run build:fontawesome-css && npm run build:fontawesome-fonts",
+    "start": "npm run build && npx serve public",
+    "dev": "npx serve public"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "@fortawesome/fontawesome-free": "^6.5.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

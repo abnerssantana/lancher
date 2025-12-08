@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lancher - Cantina Digital para Escolas. Faça pedidos de lanche para seu filho em segundos, pague via Pix e sem filas!">
+    <meta name="keywords" content="cantina, escola, lanche, pedido online, pix, cantina virtual">
+    <meta name="author" content="Lancher">
+    
+    <title>Lancher - Cantina Digital para Escolas</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+    
+    <!-- Bootstrap CSS (NPM) -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS (NPM) -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    
+    <!-- Google Fonts - Nunito + Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils"></i>
+                Lancher
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#como-funciona">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cantinas">Para Cantinas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link btn-nav-primary" href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i>
+                        Pagamento instantâneo via Pix
+                    </div>
+                    <h1 class="hero-title">
+                        Chega de filas!<br>
+                        <span class="highlight">Lanche do seu filho</span><br>
+                        na palma da mão
+                    </h1>
+                    <p class="hero-description">
+                        Esqueça as lancheiras e as filas na cantina. Com o <strong>Lancher</strong>, você faz pedidos em segundos, paga via Pix e seu filho só aproveita o intervalo!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary-custom">
+                            <i class="fas fa-user-plus me-2"></i>Cadastre-se Grátis
+                        </a>
+                        <a href="#" class="btn btn-secondary-custom">
+                            <i class="fas fa-sign-in-alt me-2"></i>Já tenho conta
+                        </a>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Gratuito para pais</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Pagamento seguro</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Pedido em 30 segundos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="app-header">
+                                        <h5><i class="fas fa-utensils me-2"></i>Lancher</h5>
+                                        <small>Cantina Escola São Paulo</small>
+                                    </div>
+                                    <div class="app-content">
+                                        <div class="product-card">
+                                            <div class="product-icon">🥪</div>
+                                            <div class="product-info">
+                                                <h6>Sanduíche Natural</h6>
+                                                <small>R$ 8,50</small>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-icon">🧃</div>
+                                            <div class="product-info">
+                                                <h6>Suco de Laranja</h6>
+                                                <small>R$ 5,00</small>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-icon">🍎</div>
+                                            <div class="product-info">
+                                                <h6>Fruta da Estação</h6>
+                                                <small>R$ 3,00</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-notification notification-1">
+                            <div class="notification-icon success">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="notification-text">
+                                <h6>Pedido confirmado!</h6>
+                                <small>Pronto para retirada</small>
+                            </div>
+                        </div>
+                        <div class="floating-notification notification-2">
+                            <div class="notification-icon pix">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="notification-text">
+                                <h6>Pix recebido</h6>
+                                <small>Pagamento instantâneo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section class="how-section" id="como-funciona">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge">
+                    <i class="fas fa-magic"></i>
+                    Simples assim
+                </div>
+                <h2 class="section-title">Como funciona o <span class="text-primary">Lancher</span>?</h2>
+                <p class="section-description mx-auto">
+                    Em apenas 4 passos simples, seu filho recebe o lanche sem enfrentar filas
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card step-connector">
+                        <div class="step-number">1</div>
+                        <h4 class="step-title">Escolha a Cantina</h4>
+                        <p class="step-description">Selecione a cantina da escola do seu filho e veja o cardápio completo</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card step-connector">
+                        <div class="step-number">2</div>
+                        <h4 class="step-title">Monte a Lancheira</h4>
+                        <p class="step-description">Adicione os produtos que desejar e defina a quantidade</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card step-connector">
+                        <div class="step-number">3</div>
+                        <h4 class="step-title">Pague via Pix</h4>
+                        <p class="step-description">Pagamento instantâneo, sem espera e sem taxas adicionais</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4 class="step-title">Pronto!</h4>
+                        <p class="step-description">O pedido vai direto para a cantina e seu filho só retira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="beneficios">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="section-badge">
+                        <i class="fas fa-star"></i>
+                        Vantagens
+                    </div>
+                    <h2 class="section-title">Por que os pais <span class="text-secondary">amam</span> o Lancher?</h2>
+                    <p class="section-description">
+                        Desenvolvido pensando na correria do dia a dia e na segurança dos seus filhos
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="feature-title">Adeus, lancheiras!</h3>
+                        <p class="feature-description">
+                            Esqueça acordar mais cedo para preparar lanche. Faça o pedido pelo celular em qualquer lugar e a qualquer hora.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Agende com antecedência</h3>
+                        <p class="feature-description">
+                            Programe pedidos para a semana toda de uma vez só. Mais praticidade para sua rotina corrida.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="feature-title">Controle total</h3>
+                        <p class="feature-description">
+                            Acompanhe tudo que seu filho come na escola. Histórico completo de pedidos e consumo.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">Pix instantâneo</h3>
+                        <p class="feature-description">
+                            Pague em segundos e o pedido já vai para a cantina. Sem espera de compensação bancária.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-title">Sem filas no intervalo</h3>
+                        <p class="feature-description">
+                            Seu filho só precisa retirar o lanche pronto. Mais tempo para brincar e descansar!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Acesso de qualquer lugar</h3>
+                        <p class="feature-description">
+                            No trabalho, em casa ou na rua. Faça pedidos de onde estiver, do celular, tablet ou computador.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parents Section -->
+    <section class="parents-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="parents-image">
+                        <svg viewBox="0 0 400 300" class="w-100" style="border-radius: 24px; background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%);">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d62828;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f77f00;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Phone -->
+                            <rect x="140" y="40" width="120" height="220" rx="15" fill="#1a1a1a"/>
+                            <rect x="148" y="55" width="104" height="190" rx="10" fill="white"/>
+                            <!-- App content -->
+                            <rect x="148" y="55" width="104" height="40" fill="url(#grad1)"/>
+                            <text x="200" y="80" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🍽️ Lancher</text>
+                            <!-- Products -->
+                            <rect x="155" y="105" width="90" height="25" rx="5" fill="#fffbeb"/>
+                            <text x="160" y="122" fill="#1a1a1a" font-size="8">🥪 Sanduíche</text>
+                            <rect x="155" y="135" width="90" height="25" rx="5" fill="#fffbeb"/>
+                            <text x="160" y="152" fill="#1a1a1a" font-size="8">🧃 Suco</text>
+                            <rect x="155" y="165" width="90" height="25" rx="5" fill="#fffbeb"/>
+                            <text x="160" y="182" fill="#1a1a1a" font-size="8">🍎 Fruta</text>
+                            <!-- Button -->
+                            <rect x="155" y="200" width="90" height="30" rx="15" fill="url(#grad1)"/>
+                            <text x="200" y="220" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Pedir agora</text>
+                            <!-- Decorative elements -->
+                            <circle cx="80" cy="80" r="40" fill="#d62828" opacity="0.1"/>
+                            <circle cx="320" cy="220" r="50" fill="#fcbf49" opacity="0.3"/>
+                            <!-- Food icons -->
+                            <text x="60" y="150" font-size="30">🍕</text>
+                            <text x="320" y="100" font-size="30">🍔</text>
+                            <text x="330" y="180" font-size="25">🥤</text>
+                        </svg>
+                        <div class="pix-badge">
+                            <div class="pix-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <div class="pix-text">
+                                <h6>Pagamento Pix</h6>
+                                <small>Cai na hora para a cantina!</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-badge">
+                        <i class="fas fa-heart"></i>
+                        Para famílias
+                    </div>
+                    <h2 class="section-title">Mais tempo com seu filho, <span class="text-primary">menos preocupação</span></h2>
+                    <p class="section-description">
+                        O Lancher foi criado para facilitar a vida dos pais que querem garantir uma alimentação de qualidade para seus filhos na escola.
+                    </p>
+                    <ul class="benefit-list">
+                        <li>
+                            <div class="benefit-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h5>Acompanhe o consumo</h5>
+                                <p>Veja exatamente o que seu filho comprou e consumiu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h5>Múltiplas cantinas</h5>
+                                <p>Gerencie pedidos em diferentes escolas em um só lugar</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h5>Autonomia para o aluno</h5>
+                                <p>Seu filho aprende a fazer escolhas de forma independente</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary-custom">
+                        <i class="fas fa-user-plus me-2"></i>Criar minha conta grátis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Sua escola já usa o <span class="text-secondary">Lancher</span>?</h2>
+                <p class="cta-description">
+                    Entre na plataforma e veja os cardápios disponíveis. Se ainda não temos parceria com a escola, cadastre-se e nós entramos em contato!
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-cta-white">
+                        <i class="fas fa-sign-in-alt me-2"></i>Entrar na plataforma
+                    </a>
+                    <a href="#" class="btn btn-cta-outline">
+                        <i class="fas fa-user-plus me-2"></i>Criar nova conta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cantinas Section -->
+    <section class="cantinas-section" id="cantinas">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge">
+                    <i class="fas fa-store"></i>
+                    Para cantinas
+                </div>
+                <h2 class="section-title">Dono de cantina? <span class="text-primary">Cresça conosco!</span></h2>
+                <p class="section-description mx-auto">
+                    Sistema 100% gratuito para cantinas escolares. Mais vendas, menos filas, gestão simplificada.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="cantina-card">
+                        <div class="cantina-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="cantina-title">Aumente suas vendas</h3>
+                        <p class="cantina-description">
+                            Receba pedidos antecipados e prepare tudo com calma. Venda mais com menos estresse.
+                        </p>
+                        <ul class="cantina-features">
+                            <li><i class="fas fa-check"></i> Pedidos programados</li>
+                            <li><i class="fas fa-check"></i> Cardápio digital</li>
+                            <li><i class="fas fa-check"></i> Gestão de estoque</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cantina-card">
+                        <div class="cantina-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3 class="cantina-title">Receba via Pix</h3>
+                        <p class="cantina-description">
+                            Dinheiro na conta na hora! Sem taxas de cartão, sem espera de compensação.
+                        </p>
+                        <ul class="cantina-features">
+                            <li><i class="fas fa-check"></i> Pagamento instantâneo</li>
+                            <li><i class="fas fa-check"></i> Sem taxas adicionais</li>
+                            <li><i class="fas fa-check"></i> Relatórios financeiros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cantina-card">
+                        <div class="cantina-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="cantina-title">Suporte dedicado</h3>
+                        <p class="cantina-description">
+                            Atendimento humanizado de segunda a sábado. Estamos aqui para ajudar seu negócio crescer.
+                        </p>
+                        <ul class="cantina-features">
+                            <li><i class="fas fa-check"></i> Segunda a Sexta: 07h-19h</li>
+                            <li><i class="fas fa-check"></i> Sábado: 09h-17h</li>
+                            <li><i class="fas fa-check"></i> Treinamento incluso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary-custom">
+                    <i class="fas fa-paper-plane me-2"></i>Quero ser parceiro
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-brand" href="#">
+                        <i class="fas fa-utensils"></i>
+                        Lancher
+                    </a>
+                    <p class="footer-description">
+                        Transformando a alimentação escolar com tecnologia. Mais praticidade para pais, mais tempo para os alunos.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5517991981114" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-title">Plataforma</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Entrar</a></li>
+                        <li><a href="#">Cadastrar</a></li>
+                        <li><a href="#como-funciona">Como funciona</a></li>
+                        <li><a href="#">Cardápios</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-title">Para Cantinas</h5>
+                    <ul class="footer-links">
+                        <li><a href="#cantinas">Seja parceiro</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Fale Conosco</h5>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=5517991981114" target="_blank" rel="noopener noreferrer">(17) 99198-1114</a><br>
+                            <a href="https://api.whatsapp.com/send?phone=5517982310203" target="_blank" rel="noopener noreferrer">(17) 98231-0203</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <a href="mailto:contato@cantinavirtual.com.br">contato@cantinavirtual.com.br</a><br>
+                            <a href="mailto:suporte@cantinavirtual.com.br">suporte@cantinavirtual.com.br</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Seg-Sex: 08h-21h | Sáb: 09h-17h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lancher (Cantina Virtual). Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (NPM) -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
