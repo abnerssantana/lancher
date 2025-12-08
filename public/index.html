@@ -13,7 +13,7 @@
   <body class="antialiased bg-body text-body font-body">
     <div>
       <div>
-        <section class="relative bg-red-700" x-data="{ mobileNavOpen: false }"><img class="absolute top-0 left-0 w-full h-full" src="fauna-assets/headers/bg-waves.png" alt=""/>
+        <section class="relative bg-red-700" x-data="{ mobileNavOpen: false }" style="background-image: linear-gradient(rgba(48, 17, 17, 0.75), rgba(223, 30, 30, 0.75)), url('images/back.jpg'); background-size: cover; background-position: center;">
           <nav class="py-6">
             <div class="container mx-auto px-4">
               <div class="relative flex items-center justify-between"><a class="inline-block text-2xl font-bold text-white" href="#!">Lancher</a>
@@ -42,9 +42,9 @@
           </nav>
           <div class="relative pt-18 pb-24 sm:pb-32 lg:pt-36 lg:pb-62">
             <div class="container mx-auto px-4 relative">
-              <div class="max-w-lg xl:max-w-xl mx-auto text-center">
-                <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight text-white mb-8">Cantina Virtual agora é Lancher</h1>
-                <p class="max-w-md xl:max-w-none text-lg text-white opacity-80 mb-10">Faça pedidos para a cantina escolar diretamente pelo celular. Escolha os produtos, agende a data e pague via Pix. Simples, rápido e prático para pais e alunos!</p><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-red-700 border border-yellow-400 hover:border-white bg-yellow-400 hover:bg-white rounded-full transition duration-200" href="register.html">Cadastre-se Grátis</a>
+              <div class="max-w-2xl mx-auto text-center">
+                <h1 class="font-medium text-5xl xs:text-5xl xl:text-8xl tracking-tight text-white mb-8">O lanche do seu filho na palma da sua mão</h1>
+                <p class="max-w-5 text-lg text-white mb-10">Faça pedidos para a cantina escolar diretamente pelo celular. Escolha os produtos, agende a data e pague via Pix. Simples, rápido e prático para pais e alunos!</p><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-red-700 border border-yellow-400 hover:border-white bg-yellow-400 hover:bg-white rounded-full transition duration-200" href="register.html">Cadastre-se Grátis</a>
               </div>
             </div>
           </div>
@@ -202,12 +202,12 @@
             <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl tracking-sm mb-16">Seja no computador, celular ou tablet, nossa plataforma oferece uma experiência fluida e intuitiva para realizar seus pedidos.</h1><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white hover:text-red-700 border border-red-700 hover:border-yellow-400 bg-red-700 hover:bg-yellow-400 rounded-full transition duration-200" href="register.html">Cadastre-se Agora</a>
           </div>
           <div class="flex justify-center">
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
-            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
-            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="assets/about/about-image2.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="assets/about/about-image3.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="assets/about/about-image4.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="assets/about/about-image2.png" alt=""/></div>
+            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="assets/about/about-image3.png" alt=""/></div>
+            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="assets/about/about-image4.png" alt=""/></div>
           </div>
         </div>
       </section>
@@ -346,7 +346,7 @@
           <div class="flex flex-wrap items-center -mx-4">
             <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0">
               <div class="max-w-lg mx-auto md:mx-0 overflow-hidden">
-                <div class="flex -mx-4 transition-transform duration-500" :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'"><img class="block flex-shrink-0 w-full px-4" src="fauna-assets/testimonials/photo-lg.png" alt=""/><img class="block flex-shrink-0 w-full px-4" src="fauna-assets/testimonials/photo-lg.png" alt=""/><img class="block flex-shrink-0 w-full px-4" src="fauna-assets/testimonials/photo-lg.png" alt=""/></div>
+                <div class="flex -mx-4 transition-transform duration-500" :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'"><img class="block flex-shrink-0 w-full px-4" src="assets/testimonials/photo-lg.png" alt=""/><img class="block flex-shrink-0 w-full px-4" src="assets/testimonials/photo-lg.png" alt=""/><img class="block flex-shrink-0 w-full px-4" src="assets/testimonials/photo-lg.png" alt=""/></div>
               </div>
             </div>
             <div class="w-full md:w-1/2 px-4">
@@ -402,7 +402,7 @@
           </section>
         </div>
       </div>
-      <section class="relative py-12 lg:py-24 bg-yellow-50 overflow-hidden"><img class="absolute bottom-0 left-0" src="fauna-assets/footer/waves-lines-left-bottom.png" alt=""/>
+      <section class="relative py-12 lg:py-24 bg-yellow-50 overflow-hidden"><img class="absolute bottom-0 left-0" src="assets/footer/waves-lines-left-bottom.png" alt=""/>
         <div class="container px-4 mx-auto relative">
           <div class="flex flex-wrap mb-16 -mx-4">
             <div class="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0"><a class="inline-block mb-4 text-3xl font-bold text-red-700" href="#!"></a>Lancher</a></div>
