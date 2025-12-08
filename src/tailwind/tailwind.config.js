@@ -1130,9 +1130,8 @@ module.exports = {
         "extend": []
     },
     "content": [
-        ".\/src\/pug\/*.pug",
-        ".\/src\/html\/*.html",
-        ".\/src\/pages\/*.js",
-        ".\/src\/components\/*\/*.js"
+        "./src/**/*.html",
+        "./src/**/*.{js,jsx,ts,tsx,vue,svelte}",
+        "./src/**/*.pug"
     ]
 };
