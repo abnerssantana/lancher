@@ -92,24 +92,6 @@ vercel
 - Animações de scroll (Intersection Observer)
 - Utilitários (debounce, formatação de moeda)
 
-## 🎯 Features
-
-- ✅ Design responsivo
-- ✅ Animações CSS suaves
-- ✅ Navbar fixa com efeito de scroll
-- ✅ Mockup de celular com app
-- ✅ Cards interativos
-- ✅ Seção para pais e cantinas
-- ✅ Footer com contatos reais
-- ✅ SEO básico (meta tags)
-- ✅ Acessibilidade (aria-labels)
-
-## 📞 Contato
-
-- WhatsApp: (17) 99198-1114 / (17) 98231-0203
-- Email: contato@cantinavirtual.com.br
-- Suporte: suporte@cantinavirtual.com.br
-
 ## 📄 Licença
 
 MIT License - sinta-se livre para usar e modificar.
