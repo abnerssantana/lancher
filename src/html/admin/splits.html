@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Splits Pix - Lancher Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="../template-assets/fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900 font-body min-h-screen">
+    <div class="min-h-screen flex flex-col" x-data="{ mobileNavOpen: false }">
+        <!-- Header -->
+        <nav class="py-3 lg:py-4 bg-white shadow-sm sticky top-0 z-50">
+            <div class="container mx-auto px-4 lg:px-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3 lg:gap-4">
+                        <button class="lg:hidden p-2 -ml-2 text-gray-600 hover:text-red-600 hover:bg-gray-100 rounded-lg transition-colors" x-on:click="mobileNavOpen = !mobileNavOpen">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </button>
+                        <a href="dashboard.html"><span class="text-red-600 text-xl lg:text-2xl font-bold tracking-tight">LANCHER</span></a>
+                        <span class="hidden sm:inline-block px-2.5 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">ADMIN</span>
+                    </div>
+                    <div class="hidden lg:flex gap-1 p-1 rounded-full bg-gray-100">
+                        <a href="dashboard.html" class="px-4 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition-colors">Dashboard</a>
+                        <a href="clientes.html" class="px-4 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition-colors">Clientes</a>
+                        <a href="instituicoes.html" class="px-4 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition-colors">Instituições</a>
+                        <a href="produtos.html" class="px-4 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition-colors">Produtos</a>
+                        <a href="relatorios.html" class="px-4 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition-colors">Relatórios</a>
+                    </div>
+                    <div class="flex items-center gap-2 lg:gap-3">
+                        <button class="relative p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                            <span class="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+                        </button>
+                        <div class="flex items-center gap-2 lg:gap-3">
+                            <div class="w-8 h-8 lg:w-9 lg:h-9 bg-red-600 rounded-full flex items-center justify-center"><span class="text-white font-medium text-xs lg:text-sm">SA</span></div>
+                            <a href="../index.html" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-gray-600 hover:text-red-600 text-sm font-medium transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                                Sair
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div :class="{ 'hidden': !mobileNavOpen, 'block': mobileNavOpen }" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50">
+            <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-black opacity-20"></div>
+            <nav class="relative py-6 px-6 w-full h-full bg-white overflow-y-auto">
+                <div class="flex items-center justify-between mb-8">
+                    <a href="dashboard.html"><span class="text-red-600 text-xl font-bold">LANCHER</span></a>
+                    <button class="p-2 -mr-2 hover:bg-gray-100 rounded-lg" x-on:click="mobileNavOpen = !mobileNavOpen">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </button>
+                </div>
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Menu Principal</p>
+                <ul class="space-y-1 mb-6">
+                    <li><a href="dashboard.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Dashboard</a></li>
+                    <li><a href="clientes.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Clientes</a></li>
+                    <li><a href="administradores.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Administradores</a></li>
+                </ul>
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Gestão</p>
+                <ul class="space-y-1 mb-6">
+                    <li><a href="instituicoes.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Instituições</a></li>
+                    <li><a href="produtos.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Produtos</a></li>
+                    <li><a href="categorias.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Categorias</a></li>
+                </ul>
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Financeiro</p>
+                <ul class="space-y-1 mb-6">
+                    <li><a href="relatorios.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Relatórios</a></li>
+                    <li><a href="splits.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-red-600 bg-red-50 rounded-xl">Splits Pix</a></li>
+                </ul>
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Sistema</p>
+                <ul class="space-y-1 mb-6">
+                    <li><a href="novidades.html" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-xl transition-colors">Novidades</a></li>
+                </ul>
+                <div class="pt-6 mt-6 border-t border-gray-100">
+                    <a href="../index.html" class="flex items-center gap-2 px-3 py-2.5 text-red-600 font-medium rounded-xl hover:bg-red-50 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                        Sair do Sistema
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-1 py-6 lg:py-8">
+            <div class="container mx-auto px-4 lg:px-6">
+                <!-- Page Header -->
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 lg:gap-4 mb-5 lg:mb-6">
+                    <div>
+                        <h1 class="text-xl lg:text-2xl font-bold text-gray-900">Splits Pix</h1>
+                        <p class="text-gray-500 text-sm mt-0.5 lg:mt-1">Configure a divisão de pagamentos por instituição.</p>
+                    </div>
+                    <button class="inline-flex items-center justify-center px-4 py-2 lg:py-2.5 bg-red-600 text-white rounded-full text-sm font-medium hover:bg-red-700 transition-colors">
+                        <svg class="w-4 h-4 mr-1.5 lg:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                        Nova Configuração
+                    </button>
+                </div>
+
+                <!-- Info Card -->
+                <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl lg:rounded-2xl p-4 lg:p-6 mb-4 lg:mb-5">
+                    <div class="flex items-start gap-3 lg:gap-4">
+                        <div class="w-10 h-10 lg:w-12 lg:h-12 bg-white bg-opacity-30 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 lg:w-6 lg:h-6 text-red-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-base lg:text-lg font-semibold text-red-900 mb-0.5 lg:mb-1">Como funciona o Split?</h3>
+                            <p class="text-red-900 text-opacity-80 text-sm">O split de pagamentos divide automaticamente cada transação Pix entre a plataforma e a cantina, garantindo repasse instantâneo e transparente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="bg-white rounded-xl lg:rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50 border-b border-gray-100">
+                                <tr>
+                                    <th class="text-left px-4 lg:px-6 py-3 lg:py-4 text-xs font-semibold text-gray-600 uppercase tracking-wider">Instituição</th>
+                                    <th class="text-left px-4 lg:px-6 py-3 lg:py-4 text-xs font-semibold text-gray-600 uppercase tracking-wider hidden sm:table-cell">Taxa Plataforma</th>
+                                    <th class="text-left px-4 lg:px-6 py-3 lg:py-4 text-xs font-semibold text-gray-600 uppercase tracking-wider">Repasse</th>
+                                    <th class="text-left px-4 lg:px-6 py-3 lg:py-4 text-xs font-semibold text-gray-600 uppercase tracking-wider hidden md:table-cell">Chave Pix</th>
+                                    <th class="text-left px-4 lg:px-6 py-3 lg:py-4 text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
+                                    <th class="text-right px-4 lg:px-6 py-3 lg:py-4 text-xs font-semibold text-gray-600 uppercase tracking-wider">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4">
+                                        <div class="flex items-center gap-2 lg:gap-3">
+                                            <div class="w-8 h-8 lg:w-10 lg:h-10 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                                <span class="text-white font-bold text-xs lg:text-sm">C1</span>
+                                            </div>
+                                            <span class="text-sm font-medium text-gray-900 truncate">Colégio São Paulo</span>
+                                        </div>
+                                    </td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4 hidden sm:table-cell"><span class="text-sm text-gray-900">5%</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4"><span class="text-sm text-green-600 font-medium">95%</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4 hidden md:table-cell"><span class="text-sm text-gray-500">***@cantina.com</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4"><span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Ativo</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4">
+                                        <div class="flex items-center justify-end">
+                                            <a href="#" class="p-1.5 lg:p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" title="Editar">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4">
+                                        <div class="flex items-center gap-2 lg:gap-3">
+                                            <div class="w-8 h-8 lg:w-10 lg:h-10 bg-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                                                <span class="text-red-900 font-bold text-xs lg:text-sm">C2</span>
+                                            </div>
+                                            <span class="text-sm font-medium text-gray-900 truncate">Escola Municipal Centro</span>
+                                        </div>
+                                    </td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4 hidden sm:table-cell"><span class="text-sm text-gray-900">5%</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4"><span class="text-sm text-green-600 font-medium">95%</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4 hidden md:table-cell"><span class="text-sm text-gray-500">***@escola.com</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4"><span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Ativo</span></td>
+                                    <td class="px-4 lg:px-6 py-3 lg:py-4">
+                                        <div class="flex items-center justify-end">
+                                            <a href="#" class="p-1.5 lg:p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" title="Editar">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-4 lg:py-5 bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 lg:px-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <p class="text-gray-500 text-xs lg:text-sm">© 2025 - Tawzer - Lancher © - Painel Administrativo</p>
+                    <div class="flex gap-4 lg:gap-6">
+                        <a href="https://api.whatsapp.com/send?phone=5517991981114" class="text-gray-500 hover:text-red-600 text-xs lg:text-sm transition-colors">Suporte</a>
+                        <a href="../index.html" class="text-gray-500 hover:text-red-600 text-xs lg:text-sm transition-colors">Site Principal</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
