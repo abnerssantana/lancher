@@ -10,18 +10,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
   </head>
-  <body class="antialiased bg-darkGreen-900 text-body font-body min-h-screen">
+  <body class="antialiased bg-gray-50 text-gray-900 font-body min-h-screen">
     <div class="min-h-screen flex flex-col">
       <section x-data="{ mobileNavOpen: false }">
-        <nav class="py-5 bg-darkGreen-900">
+        <nav class="py-5 bg-white shadow-sm">
           <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between"><a href="index.html"><span class="text-white text-2xl font-bold">LANCHER</span></a>
-              <div class="hidden lg:flex gap-2 p-1 rounded-full bg-white bg-opacity-10"><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html">Início</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#beneficios">Benefícios</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#como-funciona">Como Funciona</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#cantinas">Para Cantinas</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#contato">Contato</a></div>
-              <div class="hidden lg:flex items-center gap-3"><a class="px-4 py-2 text-white text-sm font-medium hover:text-sweetGreen-300 transition duration-200" href="login.html">Entrar</a><a class="px-4 py-2 bg-white text-darkGreen-900 text-sm font-medium rounded-full" href="register.html">Registrar</a></div>
+            <div class="flex items-center justify-between"><a href="index.html"><span class="text-red-600 text-2xl font-bold">LANCHER</span></a>
+              <div class="hidden lg:flex gap-2 p-1 rounded-full bg-gray-100"><a class="px-3 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition duration-200" href="index.html">Início</a><a class="px-3 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition duration-200" href="index.html#beneficios">Benefícios</a><a class="px-3 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition duration-200" href="index.html#como-funciona">Como Funciona</a><a class="px-3 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition duration-200" href="index.html#cantinas">Para Cantinas</a><a class="px-3 py-2 rounded-full text-gray-700 text-sm hover:bg-gray-200 transition duration-200" href="index.html#contato">Contato</a></div>
+              <div class="hidden lg:flex items-center gap-3"><a class="px-4 py-2 text-gray-700 text-sm font-medium hover:text-red-600 transition duration-200" href="login.html">Entrar</a><a class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full" href="register.html">Registrar</a></div>
               <button class="lg:hidden" x-on:click="mobileNavOpen = !mobileNavOpen">
-                <svg width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="56" height="56" rx="28" fill="white"></rect>
-                  <path d="M37 32H19M37 24H19" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="8" fill="#DC2626"></rect>
+                  <path d="M26 22H14M26 18H14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </button>
             </div>
@@ -30,7 +30,7 @@
         <div class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50" :class="{ 'hidden': !mobileNavOpen, 'block': mobileNavOpen }">
           <div class="fixed inset-0 bg-black opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
           <nav class="relative p-8 w-full h-full bg-white overflow-y-auto">
-            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><span class="text-darkGreen-900 text-xl font-bold">LANCHER</span></a>
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><span class="text-red-600 text-xl font-bold">LANCHER</span></a>
               <button x-on:click="mobileNavOpen = !mobileNavOpen">
                 <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -38,72 +38,77 @@
               </button>
             </div>
             <ul class="flex flex-col gap-8 py-12 my-12">
-              <li><a class="text-sm font-medium" href="index.html">Início</a></li>
-              <li><a class="text-sm font-medium" href="index.html#beneficios">Benefícios</a></li>
-              <li><a class="text-sm font-medium" href="index.html#como-funciona">Como Funciona</a></li>
-              <li><a class="text-sm font-medium" href="index.html#cantinas">Para Cantinas</a></li>
-              <li><a class="text-sm font-medium" href="index.html#contato">Contato</a></li>
+              <li><a class="text-sm font-medium text-gray-700 hover:text-red-600" href="index.html">Início</a></li>
+              <li><a class="text-sm font-medium text-gray-700 hover:text-red-600" href="index.html#beneficios">Benefícios</a></li>
+              <li><a class="text-sm font-medium text-gray-700 hover:text-red-600" href="index.html#como-funciona">Como Funciona</a></li>
+              <li><a class="text-sm font-medium text-gray-700 hover:text-red-600" href="index.html#cantinas">Para Cantinas</a></li>
+              <li><a class="text-sm font-medium text-gray-700 hover:text-red-600" href="index.html#contato">Contato</a></li>
             </ul>
-            <div class="flex flex-col gap-4"><a class="text-center py-2 px-4 border border-darkGreen-900 text-darkGreen-900 font-medium rounded-full" href="login.html">Entrar</a><a class="text-center py-2 px-4 bg-darkGreen-900 text-white font-medium rounded-full" href="register.html">Registrar</a></div>
+            <div class="flex flex-col gap-4"><a class="text-center py-2 px-4 border border-red-600 text-red-600 font-medium rounded-full" href="login.html">Entrar</a><a class="text-center py-2 px-4 bg-red-600 text-white font-medium rounded-full" href="register.html">Registrar</a></div>
           </nav>
         </div>
       </section>
       <div class="flex-1 flex items-center justify-center py-16 px-4">
         <div class="w-full max-w-lg">
-          <div class="bg-greenSecondary-900 rounded-2xl p-8">
+          <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
             <div class="text-center mb-8">
-              <h1 class="text-white text-3xl font-bold mb-2">Cadastro</h1>
-              <p class="text-white text-opacity-70">Crie sua conta para acessar os cardápios das cantinas</p>
+              <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="h-8 w-8 text-yellow-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                </svg>
+              </div>
+              <h1 class="text-gray-900 text-3xl font-bold mb-2">Cadastro</h1>
+              <p class="text-gray-600">Crie sua conta para acessar os cardápios das cantinas</p>
             </div>
             <form>
               <div class="flex flex-wrap -m-2">
                 <div class="w-full md:w-1/2 p-2">
-                  <label class="text-white text-sm mb-2 block">Nome completo*</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="text" placeholder="Seu nome" required="required"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">Nome completo*</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="text" placeholder="Seu nome" required="required"/>
                 </div>
                 <div class="w-full md:w-1/2 p-2">
-                  <label class="text-white text-sm mb-2 block">CPF*</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="text" placeholder="000.000.000-00" required="required"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">CPF*</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="text" placeholder="000.000.000-00" required="required"/>
                 </div>
                 <div class="w-full p-2">
-                  <label class="text-white text-sm mb-2 block">Email*</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="email" placeholder="seu@email.com" required="required"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">Email*</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="email" placeholder="seu@email.com" required="required"/>
                 </div>
                 <div class="w-full md:w-1/2 p-2">
-                  <label class="text-white text-sm mb-2 block">Celular/WhatsApp*</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="tel" placeholder="(00) 00000-0000" required="required"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">Celular/WhatsApp*</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="tel" placeholder="(00) 00000-0000" required="required"/>
                 </div>
                 <div class="w-full md:w-1/2 p-2">
-                  <label class="text-white text-sm mb-2 block">Data de nascimento</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="date"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">Data de nascimento</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="date"/>
                 </div>
                 <div class="w-full md:w-1/2 p-2">
-                  <label class="text-white text-sm mb-2 block">Senha*</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="password" placeholder="••••••••" required="required"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">Senha*</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="password" placeholder="••••••••" required="required"/>
                 </div>
                 <div class="w-full md:w-1/2 p-2">
-                  <label class="text-white text-sm mb-2 block">Confirmar senha*</label>
-                  <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="password" placeholder="••••••••" required="required"/>
+                  <label class="text-gray-700 text-sm font-medium mb-2 block">Confirmar senha*</label>
+                  <input class="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-900 border border-gray-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 focus:outline-none transition" type="password" placeholder="••••••••" required="required"/>
                 </div>
               </div>
               <div class="mt-4 mb-6">
-                <label class="flex items-start text-white text-sm">
-                  <input class="mr-2 mt-1 rounded" type="checkbox" required="required"/><span>Li e aceito os <a class="text-sweetGreen-400 hover:underline" href="#">Termos de Uso </a>e a <a class="text-sweetGreen-400 hover:underline" href="#">Política de Privacidade</a></span>
+                <label class="flex items-start text-gray-600 text-sm">
+                  <input class="mr-2 mt-1 rounded border-gray-300 text-red-600 focus:ring-red-500" type="checkbox" required="required"/><span>Li e aceito os <a class="text-red-600 hover:underline" href="#">Termos de Uso </a>e a <a class="text-red-600 hover:underline" href="#">Política de Privacidade</a></span>
                 </label>
               </div>
-              <button class="w-full py-3 bg-sweetGreen-400 text-darkGreen-900 font-bold rounded-full hover:bg-sweetGreen-300 transition duration-200" type="submit">Criar conta</button>
+              <button class="w-full py-3 bg-red-600 text-white font-bold rounded-full hover:bg-red-700 transition duration-200" type="submit">Criar conta</button>
             </form>
             <div class="mt-6 text-center">
-              <p class="text-white text-opacity-70 text-sm">Já tem uma conta? <a class="text-sweetGreen-400 hover:underline" href="login.html">Entre aqui</a></p>
+              <p class="text-gray-600 text-sm">Já tem uma conta? <a class="text-red-600 font-medium hover:underline" href="login.html">Entre aqui</a></p>
             </div>
           </div>
         </div>
       </div>
-      <footer class="py-6 border-t border-white border-opacity-10">
+      <footer class="py-6 bg-white border-t border-gray-200">
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center flex-wrap gap-4">
-            <p class="text-white text-opacity-50 text-sm">© 2025 - Tawzer - Lancher © - Todos os direitos reservados.</p>
-            <div class="flex gap-4"><a class="text-white text-opacity-50 hover:text-sweetGreen-400 text-sm transition duration-200" href="https://api.whatsapp.com/send?phone=5517991981114">Suporte</a><a class="text-white text-opacity-50 hover:text-sweetGreen-400 text-sm transition duration-200" href="index.html#contato">Contato</a></div>
+            <p class="text-gray-500 text-sm">© 2025 - Tawzer - Lancher © - Todos os direitos reservados.</p>
+            <div class="flex gap-4"><a class="text-gray-500 hover:text-red-600 text-sm transition duration-200" href="https://api.whatsapp.com/send?phone=5517991981114">Suporte</a><a class="text-gray-500 hover:text-red-600 text-sm transition duration-200" href="index.html#contato">Contato</a></div>
           </div>
         </div>
       </footer>

@@ -47,9 +47,10 @@ lancher/
 
 ## 🎨 Cores do Tema
 
-- **Vermelho escuro** - Cor principal (#8B1E1E, #6B1818, #2D0A0A)
-- **Amarelo** - Cor de destaque (#facc15, #fde047)
-- **Branco** - Textos e elementos secundários
+- **Fundo claro** - Cinza claro e branco (#f9fafb, #ffffff)
+- **Vermelho** - Cor de destaque principal (#DC2626, #B91C1C)
+- **Amarelo** - Cor de destaque secundária (#FACC15, #FDE047)
+- **Cinza escuro** - Footer (#111827)
 
 ## 📞 Contato
 
