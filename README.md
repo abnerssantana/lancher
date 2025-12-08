@@ -1,66 +1,63 @@
-# Warpspeed - HTML Tailwind CSS SaaS Application Template
+# Lancher
 
-## Description
+**Transformação digital nas cantinas** 🍽️
 
-Warp Speed is a dynamic HTML Tailwind CSS template designed to streamline billing and payment processes for modern businesses. With its sleek and intuitive interface, this template simplifies financial management, providing an efficient way to handle transactions and generate insightful financial reports. It includes key pages such as the Homepage, About, Pricing, Blog, Contact, Login, and Register pages, ensuring a full-featured solution for your business needs.
+Lancher é uma plataforma de cantinas virtuais que permite que pais e alunos façam pedidos online, agendem refeições e paguem via Pix de forma rápida e fácil.
 
-This template is created using Tailwind CSS version 3, a utility-first CSS framework. It offers flexibility and control, making it easy to customize and build responsive, modern web designs efficiently.
+## 🚀 Funcionalidades
 
-> [Click here to view demo](https://html-warpspeed-full.vercel.app/)
+- ✅ Pedidos online a qualquer momento
+- ✅ Agendamento para diferentes dias
+- ✅ Pagamento instantâneo via Pix
+- ✅ Controle de pedidos e consumo
+- ✅ Múltiplas cantinas em uma só plataforma
+- ✅ Interface responsiva (desktop, tablet, celular)
 
-> **Important:** You are currently viewing only the starter template, which includes only the homepage. The full template is available for free to users who are registered on my website and signed up to my mailing list.
-> [Click here to download the full template](https://pixelrocket.store/free-templates/html-templates/warp-speed-tailwind-html-website-template)
+## 🛠️ Tecnologias
 
-![Template Image](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/warpspeed.png)
+- [Pug](https://pugjs.org/) - Template engine
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
+- [Alpine.js](https://alpinejs.dev/) - JavaScript framework
+- [Browser Sync](https://browsersync.io/) - Live reload
 
+## 📦 Instalação
 
+```bash
+# Instalar dependências
+npm install
 
-
-## Pages
-- Homepage
-- About Us (full version only)
-- Pricing (full version only)
-- Blog (full version only)
-- Contact Us (full version only)
-- Login (full version only)
-- Register (full version only)
-
-
-## 1. Getting Started
-
-NOTE: npm commands overwrite the ./public directory.
-
-Project's source files are placed in ./src/ directory. 
-* ./src/assets - default static files (eg. image placeholders). You should replace them with your own files.
-* ./src/tailwind/ - Tailwind config file used to build the theme. Variables used in Theme Customizer are located in tailwind.config.js file.
-
-All your pages (templates) are stored in separated .pug files
-* ./src/pug/*.pug 
-
-## 2. Installation
-
-```
-# Install dependencies
-npm install 
-
-# Run dev server with live preview (Browsersync)
+# Iniciar servidor de desenvolvimento
 npm run watch
 
-# Or make a production build 
+# Build para produção
 npm run build
 ```
 
-## 3. Contact
+## 📁 Estrutura
 
-If you have have any questions, feel free to contact me:
+```
+lancher/
+├── src/
+│   ├── pug/           # Templates Pug
+│   ├── tailwind/      # Configuração Tailwind
+│   └── assets/        # Imagens, fontes, etc
+├── public/            # Arquivos compilados
+└── package.json
+```
 
-support@pixelrocket.store
+## 🎨 Cores do Tema
 
-## 4. Learn Frontend Web Development
+- **Vermelho escuro** - Cor principal (#8B1E1E, #6B1818, #2D0A0A)
+- **Amarelo** - Cor de destaque (#facc15, #fde047)
+- **Branco** - Textos e elementos secundários
 
-Want to learn frontend web development so you can build templates like this one? Visit my site: https://www.pixelrocket.store for a range of frontend web development learning resources and courses.
+## 📞 Contato
 
-## 5. Credits & Special thanks
+- WhatsApp: [(17) 99198-1114](https://api.whatsapp.com/send?phone=5517991981114)
+- WhatsApp: [(17) 98231-0203](https://api.whatsapp.com/send?phone=5517982310203)
+- Email: contato@cantinavirtual.com.br
+- Email: suporte@cantinavirtual.com.br
 
-Image placeholders from https://unsplash.com/
-Screenshot & Logo placeholders from https://www.figma.com/community
+## 📄 Licença
+
+© 2025 - Tawzer - Lancher © - Todos os direitos reservados.

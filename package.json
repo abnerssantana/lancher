@@ -1,10 +1,10 @@
 {
-  "name": "app",
+  "name": "lancher",
   "version": "1.0.0",
   "private": true,
   "license": "UNLICENSED",
-  "author": "",
-  "description": "",
+  "author": "Tawzer",
+  "description": "Lancher - Transformação digital nas cantinas. Plataforma de cantinas virtuais para escolas.",
   "scripts": {
     "browsersync": "browser-sync start --directory --server ./public --files ./public/* --startPath index.html",
     "clean": "rimraf public/*",

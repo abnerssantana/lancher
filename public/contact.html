@@ -1,7 +1,7 @@
 
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title>Visit www.pixelrocket.store to learn how to become a frontend web developer</title>
+    <title>Lancher - Contato</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -10,19 +10,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
   </head>
-  <body class="antialiased bg-body text-body font-body">
-    <div>
-      <div>
-        <p class="mb-0 py-3 bg-sweetGreen-200 text-sweetGreen-800 text-center">Want to learn how to build templates like this one? Visit <a href="https://www.pixelrocket.store">www.pixelrocket.store</a></p>
-      </div>
+  <body class="antialiased bg-darkGreen-900 text-body font-body min-h-screen">
+    <div class="min-h-screen flex flex-col">
       <section x-data="{ mobileNavOpen: false }">
         <nav class="py-5 bg-darkGreen-900">
           <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between"><a href="index.html"><img src="images/logo-white-3.svg" alt=""/></a>
-              <div class="hidden lg:flex gap-2 p-1 rounded-full bg-white bg-opacity-10"><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html">Home</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="about.html">About</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="pricing.html">Pricing</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="blog.html">Blog</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="contact.html">Contact</a></div><a class="hidden lg:flex items-center gap-2 text-white hover:text-green-500 transition duration-200" href="login.html"><span class="text-sm font-medium">Sign in</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                  <path d="M5.5 3L10.5 8L5.5 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg></a>
+            <div class="flex items-center justify-between"><a href="index.html"><span class="text-white text-2xl font-bold">LANCHER</span></a>
+              <div class="hidden lg:flex gap-2 p-1 rounded-full bg-white bg-opacity-10"><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html">Início</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#beneficios">Benefícios</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#como-funciona">Como Funciona</a><a class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200" href="index.html#cantinas">Para Cantinas</a><a class="px-3 py-2 rounded-full text-white text-sm bg-white bg-opacity-20" href="contact.html">Contato</a></div>
+              <div class="hidden lg:flex items-center gap-3"><a class="px-4 py-2 text-white text-sm font-medium hover:text-sweetGreen-300 transition duration-200" href="login.html">Entrar</a><a class="px-4 py-2 bg-white text-darkGreen-900 text-sm font-medium rounded-full hover:bg-opacity-90 transition duration-200" href="register.html">Registrar</a></div>
               <button class="lg:hidden" x-on:click="mobileNavOpen = !mobileNavOpen">
                 <svg width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="56" height="56" rx="28" fill="white"></rect>
@@ -35,89 +30,106 @@
         <div class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50" :class="{ 'hidden': !mobileNavOpen, 'block': mobileNavOpen }">
           <div class="fixed inset-0 bg-black opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
           <nav class="relative p-8 w-full h-full bg-white overflow-y-auto">
-            <div class="flex items-center justify-between"><a class="inline-block" href="#"><img src="images/logo-black-3.svg" alt=""/></a>
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><span class="text-darkGreen-900 text-xl font-bold">LANCHER</span></a>
               <button x-on:click="mobileNavOpen = !mobileNavOpen">
                 <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </button>
             </div>
-            <ul class="flex flex-col gap-12 py-12 my-12">
-              <li><a class="text-sm font-medium" href="index.html">Home</a></li>
-              <li><a class="text-sm font-medium" href="about.html">About</a></li>
-              <li><a class="text-sm font-medium" href="pricing.html">Pricing</a></li>
-              <li><a class="text-sm font-medium" href="blog.html">Blog</a></li>
-              <li><a class="text-sm font-medium" href="contact.html">Contact</a></li>
+            <ul class="flex flex-col gap-8 py-12 my-12">
+              <li><a class="text-sm font-medium" href="index.html">Início</a></li>
+              <li><a class="text-sm font-medium" href="index.html#beneficios">Benefícios</a></li>
+              <li><a class="text-sm font-medium" href="index.html#como-funciona">Como Funciona</a></li>
+              <li><a class="text-sm font-medium" href="index.html#cantinas">Para Cantinas</a></li>
+              <li><a class="text-sm font-medium font-bold" href="contact.html">Contato</a></li>
             </ul>
-            <div class="text-center"><a class="inline-flex items-center gap-2 text-black hover:text-opacity-80 transition duration-200" href="login.html"><span class="text-sm font-medium">Sign in</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                  <path d="M5.5 3L10.5 8L5.5 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg></a></div>
+            <div class="flex flex-col gap-4"><a class="text-center py-2 px-4 border border-darkGreen-900 text-darkGreen-900 font-medium rounded-full" href="login.html">Entrar</a><a class="text-center py-2 px-4 bg-darkGreen-900 text-white font-medium rounded-full" href="register.html">Registrar</a></div>
           </nav>
         </div>
       </section>
-      <div class="py-32">
-        <div>
-          <div>
-            <div>
-              <div class="rounded-lg p-4 container my-20 mx-auto bg-sweetGreen-200">
-                <p>Thank you for your interest in this template! You've downloaded the starter template which only includes the homepage. You can download the full version of this template for free by creating an account on my website and joining my newsletter. <a class="underline" href="https://www.pixelrocket.store">Click here to visit my website.</a></p>
+      <div class="flex-1 py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">Fale Conosco</h1>
+            <p class="text-white text-opacity-70 text-lg max-w-xl mx-auto">Entre em contato conosco por um dos canais abaixo. Estamos prontos para ajudar!</p>
+          </div>
+          <div class="flex flex-wrap -m-4 mb-16">
+            <div class="w-full md:w-1/3 p-4">
+              <div class="bg-greenSecondary-900 rounded-2xl p-8 h-full text-center">
+                <div class="w-16 h-16 bg-sweetGreen-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg class="h-8 w-8 text-darkGreen-900" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-white text-xl font-semibold mb-4">WhatsApp</h3>
+                <p class="text-white text-opacity-70 mb-4">Atendimento rápido pelo WhatsApp</p><a class="text-sweetGreen-400 hover:underline" href="https://api.whatsapp.com/send?phone=5517991981114&amp;text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20sobre%20o%20Lancher">(17) 99198-1114</a><br/><a class="text-sweetGreen-400 hover:underline" href="https://api.whatsapp.com/send?phone=5517982310203&amp;text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20sobre%20o%20Lancher">(17) 98231-0203</a>
               </div>
+            </div>
+            <div class="w-full md:w-1/3 p-4">
+              <div class="bg-greenSecondary-900 rounded-2xl p-8 h-full text-center">
+                <div class="w-16 h-16 bg-sweetGreen-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg class="h-8 w-8 text-darkGreen-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-white text-xl font-semibold mb-4">Email</h3>
+                <p class="text-white text-opacity-70 mb-4">Envie-nos um email</p><a class="text-sweetGreen-400 hover:underline" href="mailto:contato@cantinavirtual.com.br">contato@cantinavirtual.com.br</a><br/><a class="text-sweetGreen-400 hover:underline" href="mailto:suporte@cantinavirtual.com.br">suporte@cantinavirtual.com.br</a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/3 p-4">
+              <div class="bg-greenSecondary-900 rounded-2xl p-8 h-full text-center">
+                <div class="w-16 h-16 bg-sweetGreen-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg class="h-8 w-8 text-darkGreen-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-white text-xl font-semibold mb-4">Horários</h3>
+                <p class="text-white text-opacity-70 mb-2"> <strong>Pais e alunos:</strong></p>
+                <p class="text-white text-opacity-70 mb-4">Seg-Sex 08h-21h | Sáb 09h-17h</p>
+                <p class="text-white text-opacity-70 mb-2"> <strong>Cantinas:</strong></p>
+                <p class="text-white text-opacity-70">Seg-Sex 07h-19h | Sáb 09h-17h</p>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-2xl mx-auto">
+            <div class="bg-greenSecondary-900 rounded-2xl p-8">
+              <h2 class="text-white text-2xl font-bold mb-6 text-center">Envie uma mensagem</h2>
+              <form>
+                <div class="flex flex-wrap -m-2">
+                  <div class="w-full md:w-1/2 p-2">
+                    <label class="text-white text-sm mb-2 block">Nome*</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="text" required="required"/>
+                  </div>
+                  <div class="w-full md:w-1/2 p-2">
+                    <label class="text-white text-sm mb-2 block">Email*</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="email" required="required"/>
+                  </div>
+                  <div class="w-full p-2">
+                    <label class="text-white text-sm mb-2 block">Assunto*</label>
+                    <input class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none" type="text" required="required"/>
+                  </div>
+                  <div class="w-full p-2">
+                    <label class="text-white text-sm mb-2 block">Mensagem*</label>
+                    <textarea class="w-full px-4 py-3 rounded-lg bg-darkGreen-900 text-white border border-white border-opacity-20 focus:border-sweetGreen-400 focus:outline-none resize-none" rows="5" required="required"></textarea>
+                  </div>
+                  <div class="w-full p-2 mt-4">
+                    <button class="w-full py-4 bg-sweetGreen-400 text-darkGreen-900 font-bold rounded-full hover:bg-sweetGreen-300 transition duration-200" type="submit">Enviar mensagem</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <section class="bg-darkGreen-700 py-32 relative overflow-hidden">
+      <footer class="py-6 border-t border-white border-opacity-10">
         <div class="container mx-auto px-4">
-          <h1 class="font-heading text-white text-center text-4xl md:text-5xl max-w-md md:max-w-xl mx-auto font-bold mb-4">Want to learn how to build templates like this one?</h1>
-          <p class="text-white text-center mb-10">Visit Pixel Rocket to learn frontend web development</p>
-          <div class="text-center"><a class="group relative inline-block p-0.5 font-semibold overflow-hidden rounded-full" href="#">
-              <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-500 group-focus:to-white opacity-40 group-focus:opacity-20 rounded-full"></div></a>
-            <div class="relative z-50 flex items-center w-64 mx-auto text-center justify-center py-2 px-5 bg-white group-hover:bg-white group-focus:bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80 rounded-full transition duration-200"><a class="group relative inline-block p-0.5 font-semibold overflow-hidden rounded-full" href="#"></a><a class="mr-2 text-darkGreen-900 group-hover:text-pinkSecondary-900 group-focus:text-pinkSecondary-900" href="https://www.pixelrocket.store">Visit Pixel Rocket</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20" fill="none">
-                <path d="M5.49984 10H15.9165M15.9165 10L10.9165 5M15.9165 10L10.9165 15" stroke="#3D0412" style="stroke:#3D0412;stroke:color(display-p3 0.2392 0.0157 0.0706);stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </div>
+          <div class="flex justify-between items-center flex-wrap gap-4">
+            <p class="text-white text-opacity-50 text-sm">© 2025 - Tawzer - Lancher © - Todos os direitos reservados.</p>
+            <div class="flex gap-4"><a class="text-white text-opacity-50 hover:text-sweetGreen-400 text-sm transition duration-200" href="https://api.whatsapp.com/send?phone=5517991981114">Suporte</a><a class="text-white text-opacity-50 hover:text-sweetGreen-400 text-sm transition duration-200" href="index.html">Início</a></div>
           </div>
         </div>
-      </section>
-      <section class="bg-darkGreen-900 py-20">
-        <div class="container mx-auto px-4">
-          <div class="pb-20 border-b border-white border-opacity-30 mb-10">
-            <div class="flex flex-wrap justify-between -m-4">
-              <div class="w-full lg:w-1/6 p-4"><a class="inline-block" href="#"><img class="h-16" src="images/logo-white-3.svg" alt=""/></a></div>
-              <div class="w-full sm:w-1/2 lg:w-1/6 p-4">
-                <ul class="flex flex-col gap-6">
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">Features</a></li>
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">How it works</a></li>
-                </ul>
-              </div>
-              <div class="w-full sm:w-1/2 lg:w-1/6 p-4">
-                <ul class="flex flex-col gap-6">
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">Pricing</a></li>
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">FAQs</a></li>
-                </ul>
-              </div>
-              <div class="w-full sm:w-1/2 lg:w-1/6 p-4">
-                <ul class="flex flex-col gap-6">
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">About</a></li>
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">Blog</a></li>
-                </ul>
-              </div>
-              <div class="w-full sm:w-1/2 lg:w-1/6 p-4">
-                <ul class="flex flex-col gap-6">
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">Contact Us</a></li>
-                  <li><a class="text-white hover:text-opacity-70 text-xl transition duration-200" href="#">Privacy Policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-between items-center flex-wrap gap-6">
-            <p class="text-white">© Warp Speed. All rights reserved.</p>
-            <div class="flex flex-wrap gap-6"><a href="#"><img src="template-assets/images/logos/twitter-x-logo.svg" alt=""/></a>        <a href="#"><img src="template-assets/images/logos/linkedin-logo.svg" alt=""/></a>        <a href="#"><img src="template-assets/images/logos/instagram-logo.svg" alt=""/></a>        <a href="#"><img src="template-assets/images/logos/facebook-logo.svg" alt=""/></a></div>
-          </div>
-        </div>
-      </section>
+      </footer>
     </div>
   </body>
 </html>
