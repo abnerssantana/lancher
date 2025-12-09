@@ -2,5 +2,18 @@
   "buildCommand": "npm run build",
   "outputDirectory": "public",
   "framework": null,
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "/admin/dashboard.html",
+      "permanent": false
+    },
+    {
+      "source": "/admin/",
+      "destination": "/admin/dashboard.html",
+      "permanent": false
+    }
+  ]
 }
+
