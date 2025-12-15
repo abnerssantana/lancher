@@ -12,7 +12,7 @@ export function OwnerCta() {
     <section className="py-20 bg-lancher-red">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="font-heading font-extrabold text-2xl md:text-3xl text-white mb-4"
+          className="font-extrabold text-3xl md:text-4xl text-white mb-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

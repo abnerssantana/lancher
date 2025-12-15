@@ -7,8 +7,8 @@ export function Connectivity() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
-            <h2 className="font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl mb-4">GESTÃO COMPLETA DE ONDE VOCÊ ESTIVER</h2>
-            <p className="text-base text-white/80 mb-8">
+            <h2 className="font-extrabold text-2xl md:text-3xl lg:text-4xl mb-8 md:w-2/3">GESTÃO COMPLETA DE ONDE VOCÊ ESTIVER</h2>
+            <p className="text-base text-white/80 my-12">
               Acesse a Lancher pelo computador, celular ou tablet. Controle pedidos, configure cardápios e visualize
               relatórios em tempo real, dentro ou fora da escola.
             </p>
@@ -28,14 +28,14 @@ export function Connectivity() {
               </div>
             </div>
 
-            <Button size="lg" className="bg-white text-lancher-red hover:bg-gray-100">
+            <Button size="lg" className="mt-10 bg-white text-lancher-red hover:bg-gray-100">
               Entrar na minha conta
             </Button>
           </div>
 
           <div className="relative">
             <img
-              src="/responsive-dashboard-mockup-on-laptop-tablet-and-p.jpg"
+              src="/user-food.jpg"
               alt="Lancher em múltiplos dispositivos"
               className="rounded-xl shadow-2xl mx-auto"
               width={600}

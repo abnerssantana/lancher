@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Smartphone, Users, ShieldCheck } from "lucide-react"
-import { OwnerDialog } from "./owner-dialog"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Smartphone, Users, ShieldCheck } from "lucide-react";
+import { OwnerDialog } from "./owner-dialog";
 
 export function Hero() {
   return (
-    <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-b from-red-50 to-white overflow-hidden">
+    <section className="pt-24 md:pt-32 pb-24 md:pb-24 bg-linear-to-b from-red-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -23,11 +23,13 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <span className="w-2 h-2 bg-lancher-red rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-lancher-red">100% Gratuito para cantinas</span>
+              <span className="text-sm font-medium text-lancher-red">
+                100% Gratuito para cantinas
+              </span>
             </motion.div>
 
             <motion.h1
-              className="font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-black leading-tight mb-6 text-balance"
+              className="font-extrabold text-3xl md:text-4xl lg:text-5xl text-black leading-tight my-10 text-balance"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -41,7 +43,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Digitalize pedidos, elimine filas e simplifique o controle de vendas e pagamentos — tudo em um só sistema.
+              Digitalize pedidos, elimine filas e simplifique o controle de
+              vendas e pagamentos — tudo em um só sistema.
             </motion.p>
 
             <motion.div
@@ -50,12 +53,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <OwnerDialog>
-                <Button size="lg" className="bg-lancher-red hover:bg-lancher-red-dark text-white text-base px-8 py-6">
-                  Quero conhecer a Lancher
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </OwnerDialog>
+              {" "}
               <Button
                 size="lg"
                 variant="outline"
@@ -63,10 +61,19 @@ export function Hero() {
               >
                 Entrar
               </Button>
+              <OwnerDialog>
+                <Button
+                  size="lg"
+                  className="bg-lancher-red hover:bg-lancher-red-dark text-white text-base px-8 py-6"
+                >
+                  Quero conhecer a Lancher
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </OwnerDialog>
             </motion.div>
 
             <motion.div
-              className="flex flex-wrap justify-center lg:justify-start gap-6 mt-10 pt-10 border-t border-gray-200"
+              className="flex flex-wrap justify-center lg:justify-start gap-6 mt-20 pt-10 border-t border-gray-200"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.7 }}
@@ -105,15 +112,15 @@ export function Hero() {
                 src="/happy-students-at-school-cafeteria-with-tablets-an.jpg"
                 alt="Estudantes felizes usando o sistema Lancher na cantina"
                 className="rounded-2xl shadow-2xl mx-auto"
-                width={500}
-                height={600}
+                width={600}
+                height={700}
               />
             </motion.div>
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-lancher-red/20 rounded-full blur-3xl" />
             <div className="absolute -bottom-4 -left-4 w-60 h-60 bg-lancher-red/10 rounded-full blur-2xl" />
 
             <motion.div
-              className="absolute -right-4 top-1/4 bg-white p-4 rounded-xl shadow-lg border border-gray-100"
+              className="absolute -right-4 top-3/4 p-4 rounded-xl shadow-lg border bg-green-200/30 border-green-300 z-20"
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
@@ -121,13 +128,27 @@ export function Hero() {
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="w-5 h-5 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-gray-900">Pedido confirmado!</p>
-                  <p className="text-xs text-gray-500">Lanche pronto às 10:15</p>
+                  <p className="text-sm font-medium text-gray-900">
+                    Pedido confirmado!
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Lanche pronto às 10:15
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -135,5 +156,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

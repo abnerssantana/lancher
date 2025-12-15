@@ -40,10 +40,10 @@ export function Footer() {
                 alt="Lancher"
                 width={150}
                 height={50}
-                className="h-10 w-auto"
+                className="h-8 w-auto"
               />
             </div>
-            <p className="text-white/70 text-sm mb-6">A parceira ideal pra sua cantina.</p>
+            <p className="text-white/70 text-sm mb-12">A parceira ideal pra sua cantina.</p>
             <div className="flex gap-3">
               {socials.map((social, index) => (
                 <a

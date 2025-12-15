@@ -183,6 +183,27 @@
   .bg-lancher-brown {
     background-color: #5d2814;
   }
+  .text-lancher-brown {
+    color: #5d2814;
+  }
+  .text-lancher-black {
+    color: var(--color-lancher-black);
+  }
+  .bg-lancher-black {
+    background-color: var(--color-lancher-black);
+  }
+  .text-lancher-white {
+    color: var(--color-lancher-white);
+  }
+  .bg-lancher-white {
+    background-color: var(--color-lancher-white);
+  }
+  .text-lancher-gray {
+    color: var(--color-lancher-gray);
+  }
+  .bg-lancher-gray {
+    background-color: var(--color-lancher-gray);
+  }
   .border-lancher-red {
     border-color: #c70e1c;
   }

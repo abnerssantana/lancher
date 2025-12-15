@@ -33,7 +33,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="py-16 md:py-24 bg-gradient-to-b from-white to-red-50">
+    <section id="beneficios" className="py-16 md:py-24 bg-linear-to-r from-white to-lancher-brown/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -42,7 +42,7 @@ export function Benefits() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-4">
+            <h2 className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-12">
               ORGANIZAÇÃO, SEGURANÇA E EFICIÊNCIA EM UM SÓ SISTEMA
             </h2>
             <p className="text-base text-gray-600 mb-8">
@@ -50,7 +50,7 @@ export function Benefits() {
               tranquilidade para as famílias.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid sm:grid-cols-2 gap-8 mb-12">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -76,7 +76,7 @@ export function Benefits() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" className="bg-lancher-red hover:bg-lancher-red-dark text-white">
+              <Button size="lg" className="bg-lancher-red hover:bg-lancher-red-dark text-white w-full">
                 Quero testar a Lancher na minha escola
               </Button>
             </motion.div>
@@ -90,11 +90,11 @@ export function Benefits() {
             transition={{ duration: 0.6 }}
           >
             <motion.img
-              src="/organized-school-cafeteria-with-happy-staff-using-.jpg"
+              src="/food-kids.jpg"
               alt="Cantina organizada com sistema Lancher"
               className="rounded-2xl shadow-xl"
-              width={600}
-              height={500}
+              width={700}
+              height={300}
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             />

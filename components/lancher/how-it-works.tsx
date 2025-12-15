@@ -32,7 +32,7 @@ export function HowItWorks() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-4">
+          <h2 className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-4">
             SIMPLIFIQUE A OPERAÇÃO DA CANTINA COM TECNOLOGIA
           </h2>
           <p className="text-base text-gray-600 text-pretty">

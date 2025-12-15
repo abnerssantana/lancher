@@ -6,7 +6,7 @@ export function Support() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-4">
+            <h2 className="font-extrabold text-3xl md:text-4xl lg:text-5xl text-black mb-4">
               SUPORTE DE VERDADE PARA ESCOLAS E CANTINAS
             </h2>
             <p className="text-base text-gray-600 mb-8">

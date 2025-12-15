@@ -29,18 +29,18 @@ export function Steps() {
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
+          className="text-center max-w-5xl mx-auto mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-4">
+          <h2 className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-black mb-4 mx-auto">
             EM POUCOS PASSOS, SUA CANTINA DIGITAL
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -52,7 +52,7 @@ export function Steps() {
             >
               <motion.div
                 className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 h-full"
-                whileHover={{ y: -5, shadow: "lg" }}
+                whileHover={{ y: -5 }}
                 transition={{ duration: 0.3 }}
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -71,7 +71,7 @@ export function Steps() {
 
               {index < steps.length - 1 && (
                 <motion.div
-                  className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-lancher-red/30"
+                  className="hidden md:block absolute top-1/2 -right-10 w-10 h-1 bg-lancher-red/50"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true }}
