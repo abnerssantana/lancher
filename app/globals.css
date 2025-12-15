@@ -73,7 +73,6 @@
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
 }
-
 @theme inline {
   /* Using only Poppins for both sans and heading */
   --font-sans: "Poppins", "Poppins Fallback", system-ui, sans-serif;
